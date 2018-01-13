@@ -7,3 +7,9 @@ logging:
     com.netflix.discovery: 'OFF'
     org.springframework.cloud: 'DEBUG'
     com.atsistemas: 'DEBUG'
+eureka:
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+    server:
+      waitTimeInMsWhenSyncEmpty: 0
