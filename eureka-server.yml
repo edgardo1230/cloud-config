@@ -20,4 +20,4 @@ eureka:
   server:
    waitTimeInMsWhenSyncEmpty: 0 
    enableSelfPreservation: false
-   renewal-threshold-update-interval-ms: 30
+   renewal-percent-threshold: 30
