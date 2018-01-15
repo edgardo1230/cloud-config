@@ -13,5 +13,4 @@ eureka:
     registerWithEureka: false
     fetchRegistry: false
   server:
-   waitTimeInMsWhenSyncEmpty: 0 
-   eviction-interval-timer-in-ms: 1000
+   waitTimeInMsWhenSyncEmpty: 0
