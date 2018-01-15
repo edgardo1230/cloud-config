@@ -14,3 +14,4 @@ eureka:
     fetchRegistry: false
   server:
    waitTimeInMsWhenSyncEmpty: 0 
+   eviction-interval-timer-in-ms: 1000
