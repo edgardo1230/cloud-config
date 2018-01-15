@@ -9,13 +9,10 @@ logging:
     org.springframework.web: 'INFO'
     com.atsistemas: 'DEBUG'
 
-# Configure this Discovery Server
+#Eureka Configuration Properties
 eureka:
-  instance:
-    hostname: localhost
-    prefer-ip-address: true
   client:
     registerWithEureka: false
     fetchRegistry: false
   server:
-   enableSelfPreservation: false
+   waitTimeInMsWhenSyncEmpty: 0 
