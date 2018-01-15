@@ -11,8 +11,10 @@ logging:
 
 #Eureka Configuration Properties
 eureka:
+  instance:
+    hostname: localhost
   client:
     registerWithEureka: false
     fetchRegistry: false
-  server:
-   waitTimeInMsWhenSyncEmpty: 0 
+    serviceUrl:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
