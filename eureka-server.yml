@@ -1,20 +1,16 @@
-server:
-  port: ${EUREKA_SERVER_PORT:1111}   # HTTP port
-  
-logging:
-  file: logs/${spring.application.name}.log
-  level:
-    com.netflix.discovery: 'OFF'
-    org.springframework.cloud: 'INFO'
-    org.springframework.web: 'INFO'
-    com.atsistemas: 'DEBUG'
+#Application Name
+spring:
+  application:
+    name: eureka-server
+
+#HTTP Server
+server: 
+  port: 8761
 
 #Eureka Configuration Properties
 eureka:
-  instance:
-    hostname: localhost
   client:
     registerWithEureka: false
     fetchRegistry: false
   server:
-    enableSelfPreservation: false
+   waitTimeInMsWhenSyncEmpty: 0 
