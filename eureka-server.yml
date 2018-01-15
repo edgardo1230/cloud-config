@@ -14,10 +14,11 @@ eureka:
   instance:
     hostname: localhost
     prefer-ip-address: true
+    lease-renewal-interval-in-seconds: 30
   client:
     registerWithEureka: false
     fetchRegistry: false
   server:
    waitTimeInMsWhenSyncEmpty: 0 
    enableSelfPreservation: false
-   renewal-percent-threshold: 30
+   
