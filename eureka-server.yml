@@ -10,13 +10,19 @@ logging:
     com.atsistemas: 'DEBUG'
 
 # Configure this Discovery Server
+#eureka:
+#  instance:
+#    hostname: localhost
+#    prefer-ip-address: true
+#  client:  # Not a client, don't register with yourself
+#    registerWithEureka: false
+#    fetchRegistry: false
+#  server:
+#    enableSelfPreservation: false
+
 eureka:
-  instance:
-    hostname: localhost
-    prefer-ip-address: true
-  client:  # Not a client, don't register with yourself
+  client:
     registerWithEureka: false
     fetchRegistry: false
   server:
-    enableSelfPreservation: false
-
+   waitTimeInMsWhenSyncEmpty: 0 
