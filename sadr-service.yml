@@ -25,3 +25,11 @@ cloud:
 security:
   basic:
     enabled: false
+
+logging:
+  file: logs/${spring.application.name}.log
+  level:
+    com.netflix.discovery: 'OFF'
+    org.springframework.cloud: 'INFO'
+    org.springframework.web: 'INFO'
+    com.atsistemas: 'DEBUG'
